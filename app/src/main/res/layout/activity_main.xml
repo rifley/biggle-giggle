@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.epicodus.biggle.MainActivity">
+
+    <TextView
+        android:text="Learn the Alphabet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/headerTextView"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="50sp"
+        android:numColumns="auto_fit"
+        android:stretchMode="spacingWidthUniform"
+        android:id="@+id/baseGridView"
+        android:padding="0dp"
+        android:gravity="left"
+        android:scrollingCache="false"
+        android:layout_below="@+id/headerTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorTextIcons"
+        android:layout_below="@+id/baseGridView"
+        android:padding="5dp"
+        android:hint="Enter a word"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/locationEditText" />
+
+</RelativeLayout>
